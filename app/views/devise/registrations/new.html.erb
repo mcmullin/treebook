@@ -5,7 +5,10 @@
 			<fieldset>
 				<legend>Sign up</legend>
 		  	<div class="form-inputs">
-			    <%= f.input :email, :required => true, :autofocus => true %>
+					<%= f.input :first_name, :required => true %>
+					<%= f.input :last_name, :required => true %>
+					<%= f.input :profile_name, :required => true %>
+			    <%= f.input :email, :required => true %>
 			    <%= f.input :password, :required => true %>
 			    <%= f.input :password_confirmation, :required => true %>
 			  </div>
